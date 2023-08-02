@@ -10,6 +10,13 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- email-->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('CyzA8fCs8XMah13UA')
+</script>
 
 </head>
 <body>
@@ -452,15 +459,15 @@
 
     <div class="row">
 
-        <form action="">
+        <form action="" id="form">
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" placeholder="name" id ="from_name" name ="from_name">
+                <input type="email" placeholder="email" id ="email_id" name ="email_id">
             </div>
-            <input type="text" placeholder="subject">
-            <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
-            <button class="btn"> send message </button>
-        </form>
+            <input type="text" placeholder="subject"  >
+            <textarea name="" id="" cols="30" rows="10" placeholder="message" id ="message" name ="message" ></textarea>
+            <button class="btn" id="button"> Enviar Mensaje </button>
+        </form> 
 
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.9925297615487!2d-98.19516108562338!3d19.064066057302767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc11a16915da5%3A0xfcad411884478731!2sCalle%207%20Nte.%204408%2C%20Santa%20Mar%C3%ADa%2C%2072080%20Puebla%2C%20Pue.%2C%20Mexico!5e0!3m2!1sen!2sin!4v1621519687406!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
 

@@ -46,3 +46,26 @@ $(document).ready(function(){
   });
 
 });
+
+
+// servicio de email  Emailjs
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_yvzacpi';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'no Send Email';
+      alert(JSON.stringify(err));
+    });
+});
