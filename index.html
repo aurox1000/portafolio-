@@ -9,18 +9,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
+   
+    <!--<link rel=" stylesheet" href="bootstrap4/css/bootstrap.min.css">-->
+    <link rel=" stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel= "stylesheet" href="node_modules/animate.css/">
     <link rel="stylesheet" href="css/style.css">
+   
     <!-- email-->
     <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+   
+       
 
 <script type="text/javascript">
   emailjs.init('CyzA8fCs8XMah13UA')
 </script>
 
+
+
+
 </head>
 <body>
    
+   
+
+
 <!-- header section starts  -->
 
 <header>
@@ -141,7 +155,14 @@
 
         <div class="box">
             <h3 class="title">Experiencia</h3>
-            <div class="exp-box">
+            <div class="exp-box">               
+                
+                <h3>PROGRAMADOR | TRANSPORTES MARVA S.A de C.V. </h3>
+                <h3>sep 2022 - marzo-2023</h3>
+                <p> Programador C#, Windows Forms, SQL Server, Creación de Módulos de Logística.
+    
+                </p>
+
                 <h3>Desarrollador web | CRITERIA INTELIGENCIA DE NEGOCIOS </h3>
                 <h3>sep 2022 - marzo-2023</h3>
                 <p> Desarrollo de sistemas web, en el frontend y backend, apis, analisis de negocio
@@ -149,14 +170,17 @@
     
                 </p>
                 
+               
+            </div>
+            <div class="exp-box">
+                
                 <h3>Desarrollador web | Freelance </h3>
                 <h3>dic 2020 - sep-2022</h3>
                 <p> Desarrollo de paginas web, en el frontend y backend, tiendas virtuales, ecommerce
                     portafolios profesionales , plataformas de capacitacion.
     
-                </p>
-            </div>
-            <div class="exp-box">
+                </p>                
+                
                 <h3>Ingeniero Residente | Asiatech S.A de CV </h3>
                 <h3>feb 2020 - jun 2020 </h3>
                 <p> Recidencia profecional en el desarrollo de software, Responsable de desarrollar e implementar nuevas funcionalidades para mejorar software
@@ -203,8 +227,8 @@
     </div>
 
     <div class="download">
-        <a href= "https://aurox1000.github.io/portafolio-/cv/cv-vicent.pdf" download="" class="btn"  target= "_blank "> download CV </a>
-        <a href= "https://aurox1000.github.io/portafolio-/cv/cvENG.pdf" download="" class="btn"  target= "_blank "> download CV in english</a>
+        <a href= "https://aurox1000.github.io/portafolio-/cv/cv-vicent.pdf" id="btnCVES" download="" class="btn"  target= "_blank "> download CV </a>
+        <a href= "https://aurox1000.github.io/portafolio-/cv/cvENG.pdf" id="btnCVEN" download="" class="btn"  target= "_blank "> download CV in english</a>
     </div>
     
 
@@ -433,25 +457,26 @@
 
 <section class="contact" id="contact">
 
-    <h1 class="heading"> contact <span>me</span> </h1>
+    <h1 class="heading"> contacta <span>me</span> </h1>
 
     <div class="box-container">
         
         <div class="box">
             <i class="fas fa-phone"></i>
-            <h3>my number</h3>
+            <h3>Cel</h3>
             <p>+52 2226581419</p>
+            <p>+52 2217041087</p>
         </div>
 
         <div class="box">
             <i class="fas fa-envelope"></i>
-            <h3>my email</h3>
+            <h3>email</h3>
             <p>vice_012@hotmail.com</p>
         </div>
 
         <div class="box">
             <i class="fas fa-map-marker-alt"></i>
-            <h3>my address</h3>
+            <h3>Dirección</h3>
             <p>calle 7 norte no 4408 col santa maria puebla</p>
         </div>
 
@@ -461,11 +486,11 @@
 
         <form action="" id="form">
             <div class="inputBox">
-                <input type="text" placeholder="name" id ="from_name" name ="from_name">
-                <input type="email" placeholder="email" id ="email_id" name ="email_id">
+                <input type="text" placeholder="Nombre" name ="from_name" id ="from_name" >
+                <input type="email" placeholder="email" name ="email_id" id ="email_id" >
             </div>
-            <input type="text" placeholder="subject"  >
-            <textarea name="" id="" cols="30" rows="10" placeholder="message" id ="message" name ="message" ></textarea>
+            <input type="text" placeholder="Asunto" name="user_name"  >
+            <textarea name ="message" id="" cols="30" rows="10" placeholder="Mensaje" id ="message"  ></textarea>
             <button class="btn" id="button"> Enviar Mensaje </button>
         </form> 
 
@@ -502,7 +527,10 @@
 
 
 
-
+<script src="js/jquery-3.3.1.min.js"></script>    
+<script src = "popper/popper.min.js"></script>
+<!-- <script src="bootstrap4/js/bootstrap.min.js"></script> -->
+<script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
 <!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
